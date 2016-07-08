@@ -43,7 +43,6 @@ public class BatteryReader {
     }
     int level = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, MIN_BATTERY_LEVEL);
     int scale = batteryStatus.getIntExtra(BatteryManager.EXTRA_SCALE, MAX_BATTERY_LEVEL);
-
     return level * 100f / scale;
   }
 
