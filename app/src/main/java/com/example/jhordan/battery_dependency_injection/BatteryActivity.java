@@ -33,7 +33,6 @@ public class BatteryActivity extends AppCompatActivity implements BatteryPresent
   @BindView(R.id.toolbar) Toolbar toolbar;
   @BindView(R.id.label_percent) TextView labelPercent;
 
-
   private Injection injection;
   private BatteryPresenter presenter;
 
@@ -41,7 +40,6 @@ public class BatteryActivity extends AppCompatActivity implements BatteryPresent
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_battery);
     ButterKnife.bind(this);
-
     initializeToolbar();
     initializeInjector();
     initializePresenter();
@@ -49,7 +47,6 @@ public class BatteryActivity extends AppCompatActivity implements BatteryPresent
 
   @Override protected void onResume() {
     super.onResume();
-
     presenter.initialize();
   }
 
@@ -79,7 +76,7 @@ public class BatteryActivity extends AppCompatActivity implements BatteryPresent
   }
 
   @Override public void showProjectOnGitHub() {
-    Uri uri = Uri.parse("https://github.com/erikcaffrey/");
+    Uri uri = Uri.parse(getString(R.string.git_hub));
     startActivity(new Intent(Intent.ACTION_VIEW, uri));
   }
 
@@ -100,5 +97,4 @@ public class BatteryActivity extends AppCompatActivity implements BatteryPresent
   private int getBatteryColor(float percent) {
     return ContextCompat.getColor(this, percent > 15f ? R.color.battery_ok : R.color.battery_low);
   }
-
 }

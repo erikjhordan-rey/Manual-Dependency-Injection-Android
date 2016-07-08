@@ -39,8 +39,6 @@ public class Injection {
     return new BatteryPresenter(provideBatteryReader());
   }
 
-  /***** Public provide methods *****/
-
   public Context provideContext() {
     return context;
   }
