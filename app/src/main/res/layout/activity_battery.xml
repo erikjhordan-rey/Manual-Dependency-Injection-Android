@@ -1,0 +1,53 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".BatteryActivity">
+
+  <android.support.design.widget.AppBarLayout
+      android:id="@+id/app_bar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+  </android.support.design.widget.AppBarLayout>
+
+  <LinearLayout
+      android:id="@+id/linear_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/app_bar"
+      android:background="@color/background"
+      android:gravity="center"
+      android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/label_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="100sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/battery_reader"
+        android:textColor="@color/colorAccent"
+        android:textSize="26sp"/>
+
+  </LinearLayout>
+
+
+</RelativeLayout>
+
+

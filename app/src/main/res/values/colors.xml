@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#141414</color>
+  <color name="colorPrimaryDark">#050505</color>
+  <color name="colorAccent">#FF4081</color>
+  <color name="background">#333333</color>
+
+  <color name="battery_ok">#69F0AE</color>
+  <color name="battery_low">#FF5252</color>
+</resources>
