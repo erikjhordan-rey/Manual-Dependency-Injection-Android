@@ -12,7 +12,7 @@ Libraries used on the sample project
 
 
 # Demo
-![](https://aa1a5cf3c6e3569b77b29843c3f5b6ba8b369090.googledrive.com/host/0B9hNKr5AY4xXTXktOS11VlBaemM/battery.png)
+![](./art/battery.png)
 [1]: http://erikcaffrey.github.io/2016/04/26/dependency-injection/
 [2]: http://jakewharton.github.io/butterknife/
 
