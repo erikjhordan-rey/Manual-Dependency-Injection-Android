@@ -18,9 +18,6 @@ package com.example.jhordan.battery_dependency_injection;
 
 import android.app.Application;
 
-/**
- * 07/07/16.
- */
 public class BatteryApplication extends Application {
 
   private final Injection injection = createInjection();

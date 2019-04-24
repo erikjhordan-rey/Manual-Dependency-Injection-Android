@@ -18,39 +18,36 @@ package com.example.jhordan.battery_dependency_injection;
 
 import android.content.Context;
 
-/**
- * 07/07/16.
- */
-public class Injection {
+class Injection {
 
   private final Context context;
   private BatteryReader batteryReader = null;
   private BatteryPresenter batteryPresenter = null;
 
-  public Injection(Context context) {
+  Injection(Context context) {
     this.context = context;
   }
 
-  protected BatteryReader createBatteryReader() {
+  private BatteryReader createBatteryReader() {
     return new BatteryReader(provideContext());
   }
 
-  protected BatteryPresenter createBatteryPresenter() {
+  private BatteryPresenter createBatteryPresenter() {
     return new BatteryPresenter(provideBatteryReader());
   }
 
-  public Context provideContext() {
+  private Context provideContext() {
     return context;
   }
 
-  public BatteryReader provideBatteryReader() {
+  private BatteryReader provideBatteryReader() {
     if (batteryReader == null) {
       batteryReader = createBatteryReader();
     }
     return batteryReader;
   }
 
-  public BatteryPresenter provideBatteryPresenter() {
+  BatteryPresenter provideBatteryPresenter() {
     if (batteryPresenter == null) {
       batteryPresenter = createBatteryPresenter();
     }

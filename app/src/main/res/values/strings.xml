@@ -3,5 +3,5 @@
   <string name="percentage">%.0f%%</string>
   <string name="action_github">Github</string>
   <string name="battery_reader">Battery Reader</string>
-  <string name="git_hub">https://github.com/erikcaffrey/Dependency-Injection-Android</string>
+  <string name="git_hub">https://erikjhordan-rey.github.io/blog/2016/04/25/ANDROID-dependency-injection.html</string>
 </resources>

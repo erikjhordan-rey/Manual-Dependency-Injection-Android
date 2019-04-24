@@ -20,11 +20,11 @@ public class Presenter<T> {
 
   private T view;
 
-  public void setView(T view) {
+  void setView(T view) {
     this.view = view;
   }
 
-  public T getView() {
+  T getView() {
     return view;
   }
 

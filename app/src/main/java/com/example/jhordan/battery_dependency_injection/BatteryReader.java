@@ -21,21 +21,18 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.BatteryManager;
 
-/**
- * 07/07/16.
- */
-public class BatteryReader {
+class BatteryReader {
 
   private final static int MIN_BATTERY_LEVEL = 0;
   private final static int MAX_BATTERY_LEVEL = 100;
 
   private final Context context;
 
-  public BatteryReader(Context context) {
+  BatteryReader(Context context) {
     this.context = context;
   }
 
-  public float getBatteryPercent() {
+  float getBatteryPercent() {
     IntentFilter intentFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
     Intent batteryStatus = context.registerReceiver(null, intentFilter);
     if (isBatteryStatusNull(batteryStatus)) {

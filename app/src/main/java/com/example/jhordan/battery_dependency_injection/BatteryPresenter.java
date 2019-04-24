@@ -16,16 +16,13 @@
 
 package com.example.jhordan.battery_dependency_injection;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
-/**
- * 07/07/16.
- */
 public class BatteryPresenter extends Presenter<BatteryPresenter.View> {
 
   private BatteryReader batteryReader;
 
-  public BatteryPresenter(@NonNull BatteryReader batteryReader) {
+  BatteryPresenter(@NonNull BatteryReader batteryReader) {
     this.batteryReader = batteryReader;
   }
 
@@ -39,11 +36,11 @@ public class BatteryPresenter extends Presenter<BatteryPresenter.View> {
     getView().showBatteryPercent(percent);
   }
 
-  public void openProjectOnGitHub() {
+  void openProjectOnGitHub() {
     getView().showProjectOnGitHub();
   }
 
-  public void destroy() {
+  void destroy() {
     setView(null);
   }
 
