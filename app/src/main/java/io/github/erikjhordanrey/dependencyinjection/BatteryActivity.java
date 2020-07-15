@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.jhordan.battery_dependency_injection;
+package io.github.erikjhordanrey.dependencyinjection;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -23,7 +23,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import com.example.jhordan.battery_dependency_injection.databinding.ActivityBatteryBinding;
+import io.github.erikjhordanrey.dependencyinjection_battery.R;
+import io.github.erikjhordanrey.dependencyinjection_battery.databinding.ActivityBatteryBinding;
 
 public class BatteryActivity extends AppCompatActivity implements BatteryPresenter.View {
 

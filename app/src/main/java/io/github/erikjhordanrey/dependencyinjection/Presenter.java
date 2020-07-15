@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.jhordan.battery_dependency_injection;
+package io.github.erikjhordanrey.dependencyinjection;
 
 public class Presenter<T> {
 

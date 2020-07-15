@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jhordan.battery_dependency_injection">
+    package="io.github.erikjhordanrey.dependencyinjection_battery">
 
     <application
-        android:name=".BatteryApplication"
+        android:name="io.github.erikjhordanrey.dependencyinjection.BatteryApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".BatteryActivity"
+            android:name="io.github.erikjhordanrey.dependencyinjection.BatteryActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
