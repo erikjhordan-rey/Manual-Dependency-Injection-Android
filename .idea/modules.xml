@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidStudio-Dependency-Injection-Android.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidStudio-Dependency-Injection-Android.iml" group="Dependency-Injection-Android" />
       <module fileurl="file://$PROJECT_DIR$/Dependency-Injection-Android.iml" filepath="$PROJECT_DIR$/Dependency-Injection-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dependency-Injection-Android-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dependency-Injection-Android-app.iml" group="Dependency-Injection-Android/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

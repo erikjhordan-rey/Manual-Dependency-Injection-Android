@@ -21,27 +21,21 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
+import com.example.jhordan.battery_dependency_injection.databinding.ActivityBatteryBinding;
 
 public class BatteryActivity extends AppCompatActivity implements BatteryPresenter.View {
-
-  @BindView(R.id.toolbar) Toolbar toolbar;
-  @BindView(R.id.label_percent) TextView labelPercent;
 
   private Injection injection;
   private BatteryPresenter presenter;
 
+  private ActivityBatteryBinding binding;
+
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_battery);
-    ButterKnife.bind(this);
+    binding = ActivityBatteryBinding.inflate(getLayoutInflater());
+    setContentView(binding.getRoot());
     initializeToolbar();
     initializeInjector();
     initializePresenter();
@@ -72,9 +66,8 @@ public class BatteryActivity extends AppCompatActivity implements BatteryPresent
   }
 
   @Override public void showBatteryPercent(float percent) {
-    labelPercent.setText(getString(R.string.percentage, percent));
-    int color = getBatteryColor(percent);
-    labelPercent.setTextColor(color);
+    binding.labelPercent.setText(getString(R.string.percentage, percent));
+    binding.labelPercent.setTextColor(getBatteryColor(percent));
   }
 
   @Override public void showProjectOnGitHub() {
@@ -83,7 +76,7 @@ public class BatteryActivity extends AppCompatActivity implements BatteryPresent
   }
 
   private void initializeToolbar() {
-    setSupportActionBar(toolbar);
+    setSupportActionBar(binding.toolbar);
   }
 
   private void initializeInjector() {
