@@ -6,7 +6,7 @@ Manually Dependency Injection used to explain how to use this pattern in our and
 
 # Demo
 
-<img src="./art/battery.png width="260">
+<img src="https://user-images.githubusercontent.com/5893477/87609374-fe921700-c6c7-11ea-8619-2a3397d6db7c.png" width="260">
 
 # Inspiring
 
@@ -20,4 +20,4 @@ Feel free to report or add any useful feature, I will be glad to improve it with
 Developed By
 ------------
 
-* Erik Jhordan Rey  - <erikjhordan.rey@gmail.com>
+* Erik Jhordan Rey - <erikjhordan.rey@gmail.com>
